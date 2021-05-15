@@ -2,6 +2,14 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+    /* font grows 1px for every 100px of viewport width */
+    font-size: calc(16px + 1vw);
+    /* leading grows along with font,
+    with an additional 0.1em + 0.5px per 100px of the viewport */
+    line-height: calc(1.1em + 0.5vw);
+  font-family: 'Cabin', sans-serif;
+}
 
 header {
   background-color:blanchedalmond;
@@ -14,14 +22,33 @@ main {
   width: 50vw;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40vh 40vh;
   grid-gap: 10px 10px;
 }
 
+h2 {
+  position: absolute;
+  bottom: 0px;
+  background-color: mistyrose;
+  padding: 1rem;
+  width: 1fr;
+}
+
+img {
+  position: relative;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:orangered;
+}
+
 #arduino, #website, #pmamp, #pfp {
-  padding: 20px;
   text-align: center;
+  display: inline-block;
+  position: relative;
 }
 
 #arduino {
@@ -35,4 +62,17 @@ main {
 }
 #pfp {
   background-color: mediumaquamarine;
+}
+
+/* For larger screens */
+@media (min-width: 700px) {
+  main {
+    margin: auto;
+    width: 50vw;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40vh 40vh;
+    grid-gap: 10px 10px;
+  }
 }
