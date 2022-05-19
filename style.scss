@@ -124,6 +124,8 @@ header {
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
     cursor: pointer;
     transition: $transition;
+    align-self: stretch;
+    justify-self: stretch;
 
     &:hover {
       transform: translateY(-.5%);
@@ -154,7 +156,7 @@ header {
   &__text {
     font-size: 1.5rem;
     letter-spacing: .1rem;
-    line-height: 1.7;
+    line-height: 1.7rem;
     color: darken($color-text, 1%);
     margin-bottom: 2.5rem;
   }
