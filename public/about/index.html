@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ammon Shepherd</title>
+    <link rel="icon" type="image/vnd.icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="nav-logo" href="/"><img src="/images/logo.png" /></a>
+        <div class="topnav" id="menu-items">
+          <a href="/">Home</a>
+          <!-- <a href="/blog/">Blog</a> -->
+          <a href="javascript:void(0);" class="icon" onclick="nav()"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+<section id="single-page">
+<p><img src="https://ammonshepherd.github.io/about/shepherd-ammon.jpg" alt="me" /></p>
+<p>Howdy! I'm a husband, father of six children, disciple of Jesus Christ. That's how I see myself.</p>
+<p>I work at the University of Virginia. I run a Makerspace. Which basically means I have the coolest job ever. I help people make stuff.</p>
+</section>
+</main>
+
+    <footer>
+      <div id="footer-social-icons">
+        <a href="mailto:ammonshepherd@gmail.com" ><img class="header__img" src="/images/email.png" alt="Email" /></a>
+        <a href="https://github.com/ammonshepherd" ><img class="header__img" src="/images/github.png" alt="GitHub Account" /></a>
+        <a href="https://twitter.com/mossiso" ><img class="header__img" src="/images/twitter.png" alt="Twitter Account" /></a>
+        <a href="https://www.instagram.com/mossiso/" ><img class="header__img" src="/images/instagram.png" alt="Instagram Account" /></a>
+        <a href="https://www.linkedin.com/in/ammon-edwin-shepherd/" ><img class="header__img" src="/images/linked-in.png" alt="LinkedIn" /></a>
+      </div>
+      <div id="footer-section">
+        <span>Copyright &copy; <span id="year"></span> Ammon Shepherd</span>
+        &because; <span>All rights reserved</span> &because;
+        <!-- <span><a href="#">Privacy Policy</a></span> &because;
+        <span><a href="#">Terms and Conditions</a></span> -->
+      </div>
+    </footer>
+    <script src="/js/nav.js"></script>
+    <script>
+      const d = new Date()
+      let year = d.getFullYear()
+      document.getElementById("year").textContent = year
+    </script>
+  </body>
+</html>

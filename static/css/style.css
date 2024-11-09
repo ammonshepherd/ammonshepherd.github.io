@@ -1,0 +1,355 @@
+/** colors **/
+/* 1. Use a more-intuitive box-sizing model.  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* Typographic tweaks!  3. Add accessible line-height 4. Improve text rendering */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  --dark: #32012F;
+  --text: #32012F;
+  --brown: #B67352;
+  --orange: #F97300;
+  --bgcolor: #ECB159;
+  --blue: #8CB9BD;
+  --lightblue: #024CAA;
+  --grey: #E2DFD0;
+  color: var(--text);
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/***************************************
+      navigation bar
+***************************************/
+nav {
+  width: 100%;
+  background-color: var(--bgcolor);
+  height: 14vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Nunito, sans-serif;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+#nav-logo {
+  margin-left: 10vw;
+}
+#nav-logo img {
+  max-height: 60px;
+}
+.topnav {
+  background-color: var(--bgcolor);
+  overflow: hidden;
+  margin-right: 10vw;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--text);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+.topnav a:hover {
+  color: var(--brown);
+}
+.topnav a.active {
+  background-color: var(--blue);
+  color: var(--grey);
+}
+.topnav .icon {
+  display: none;
+}
+
+/***************************************
+   hero 
+***************************************/
+#hero {
+  background-color: var(--bgcolor); 
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8vw;
+  padding-top: 30vh;
+}
+#hero-heading {
+  text-align: center;
+}
+#hero-heading h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+#hero-image img {
+  width: 20vw;
+}
+
+
+hr {
+  border: none;
+  border-top: 3px double coral;
+  color: coral;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  width: 30vw;
+  margin: auto;
+}
+
+hr::after {
+  background: #fff;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+/**********************************
+    project section
+**********************************/
+#project-section h2, #old-sites h2 {
+  margin: 40px;
+  font-size: 2rem;
+}
+.projects {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  margin: 20px;
+}
+.project_card {
+  width: 100%;
+  margin: 40px 0px;
+}
+.project_card a {
+  text-decoration: none;
+  color: var(--text);
+}
+.project_card a:hover {
+  color: var(--brown);
+}
+.project_card img {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--blue);
+}
+.card__header {
+  margin-top: 20px;
+  padding: 4px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#single-page {
+  height: 100vh;
+  margin: 20px auto;
+  width: 80vw;
+}
+
+/************************************
+ footer styles 
+************************************/
+footer {
+  background-color: #606160;
+  color: #f2f2f2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  padding: 40px 0px;
+}
+#footer-section {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+#footer-section a {
+  color: gold;
+  text-decoration: none;
+}
+#footer-section a:hover {
+  color: rgb(255, 200, 181);
+}
+#footer-social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  align-items: center;
+}
+#footer-social-icons img {
+  width: 30px;
+  background-color: white;
+  border-radius: 9px;
+  padding: 4px;
+}
+
+/***************************************
+    blog list page styles
+***************************************/
+.page-header {
+  position: relative;
+  height: 24vh;
+  text-align: center;
+  background-image: url("../images/0c90a6f6-b868-4759-887d-3e2091660908.jpg");
+  background-size: cover;
+}
+.page-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 10vh;
+  font-weight: bold;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: var(--text);
+}
+#blog_list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 3vw;
+}
+
+.blog_list-card {
+  display: grid;
+  grid-template-rows: max-content  1fr;
+  margin-bottom: 44px;
+}
+.blog_list-card img {
+  border-radius: 4px;
+}
+.blog_list-card h2 {
+  line-height: 1.8rem;
+  margin: 8px 0px;
+}
+.blog_list-card a {
+  text-decoration: none;
+  color: #515151;
+}
+.blog_list-date {
+  color: #a1a1a1;
+  margin-bottom: 8px;
+}
+
+/***************************************
+    post page styles
+***************************************/
+.blog_post {
+  margin: 20px 6vw;
+}
+.blog_post p {
+  margin-bottom: .9rem;
+}
+.blog_post img {
+  margin: auto;
+  width: 100%;
+  margin: 18px 0px;
+}
+.blog_date {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.blog_title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+/***************************************
+    big screen specific styles
+***************************************/
+@media screen and (max-width: 820px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 820px) {
+  /*** projects section ***/
+  .projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 30px;
+    margin: 20px;
+  }
+  .project_card {
+    box-sizing: border-box;
+    width: 30%;
+  }
+  .project_card img {
+    width: 100%;
+  }
+
+  /**** blog list page ****/
+  #blog_list {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 44px;
+    justify-content: center;
+  }
+  .blog_list-card {
+    width: 35vw;
+  }
+}
