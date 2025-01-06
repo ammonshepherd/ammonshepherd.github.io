@@ -12,3 +12,7 @@ Mostly a set of tutorials
 - [Understanding Git](https://ammonshepherd.github.io/git-for-beginners/)
 - [PHP Development Environment with Docker](https://github.com/ammonshepherd/pmamp)
 - [Python, Flask, PostgreSQL in a Docker Development](https://github.com/ammonshepherd/pfp)
+
+
+Run dev with `zola serve`
+
