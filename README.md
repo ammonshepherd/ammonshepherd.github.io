@@ -16,3 +16,4 @@ Mostly a set of tutorials
 
 Run dev with `zola serve`
 
+To build live site, run `zola build` then sync changes to github repo.
