@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://ammonshepherd.github.io"
 
+# Set output directory to work with GitHub Pages
+output_dir = "docs" 
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
