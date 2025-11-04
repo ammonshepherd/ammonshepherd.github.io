@@ -2,7 +2,7 @@
 
 My repo for the website https://ammonshepherd.github.io
 
-Built using [https://www.getzola.org/](https://www.getzola.org/). Nothing fancy. Built by hand. 
+Built using [https://github.com/ammonshepherd/pysite](https://github.com/ammonshepherd/pysite). Super Simple Static Site Creator in Python. Nothing fancy. Built by hand. 
 
 Mostly a set of tutorials
 
@@ -12,8 +12,3 @@ Mostly a set of tutorials
 - [Understanding Git](https://ammonshepherd.github.io/git-for-beginners/)
 - [PHP Development Environment with Docker](https://github.com/ammonshepherd/pmamp)
 - [Python, Flask, PostgreSQL in a Docker Development](https://github.com/ammonshepherd/pfp)
-
-
-Run dev with `zola serve`
-
-To build live site, run `zola build` then sync changes to github repo.
